@@ -25,6 +25,8 @@ void getInput(const std::string &fileName, std::map<char, int> &charToValue, str
             throw std::runtime_error("Wrong input file format.");
         if (charToValue.find(x) != charToValue.end())
             throw std::runtime_error("Duplicate character found.");
+        if (v < 0)
+            throw std::runtime_error("Value " + std::to_string(i) + " must be a natural number.");
         charToValue[x] = v;
     }
 
