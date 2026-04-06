@@ -4,6 +4,8 @@
 #include <iostream>
 #include "input.h"
 
+#define ll long long
+
 std::string outputFile = "./../examples/example.out";
 
 int main() {
@@ -14,7 +16,7 @@ int main() {
     int n = a.size();
     int m = b.size();
 
-    vector<vector<int>> dp(n+1, vector<int>(m+1));
+    vector<vector<ll>> dp(n+1, vector<ll>(m+1));
     for (int i = 0; i <= n; i++) {
         dp[i][0] = 0;
     }
