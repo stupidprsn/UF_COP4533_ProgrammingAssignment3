@@ -6,10 +6,7 @@
 
 ---
 ## File Locations
-* Task A is available in `src/matching.h` and `src/matching.cpp`. 
-* Task B is available in `src/Verifier.h` and `src/Verifier.cpp`.
-* Task C is available in `src/RuntimeCheck.h` and `src/RuntimeCheck.cpp`.
-* One input/output set for the $n=512$ test case is available at `resources/512.in` and `resources/512.out`. 
+* Fix later
 ---
 
 ## Compilation & Build Instructions
