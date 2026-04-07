@@ -6,14 +6,16 @@
 
 ---
 ## File Locations
-* Fix later
+* Source scripts are found in `src`.
+* Responses to questions are found at `COP4533 Programming Assignment #3 Write-Up.pdf`.
+* Sample test cases are found at `examples`.
 ---
 
 ## Compilation & Build Instructions
 This project is designed to be built using CLion and CMake.
 
 ### Dependencies
-* C++ Compiler (supporting C++11 or higher)
+* C++ Compiler (supporting C++17 or higher)
 * CMake
 * CLion IDE (recommended)
 
@@ -21,9 +23,7 @@ This project is designed to be built using CLion and CMake.
 1.  Download and extract the project `.zip` file.
 2.  Open the folder `UF_COP4533_ProgrammingAssignment3` with **CLion**.
 3.  When prompted, select **"Configure CMake Project"**.
-4.  Select **"Create CMakeList.txt"**.
-5.  Ensure the entire `src` folder is checked in the project view to include all source files.
-6.  Build the project using the CLion build button.
+4. Build the project using the CLion build button.
 
 ---
 
@@ -33,35 +33,25 @@ This project is designed to be built using CLion and CMake.
 By default, the program executes `main()`.
 * What it does: Reads `example.in`, computes the highest value of longest common subsequence, then backtracks to return the subsequence itself.
 * Output: 
-    * Input files generated: `example.in`
-    * Output files generated: `example.out`.
+  * Program outputs both in the standard out stream and to the designated out file. 
+  * Output files generated: `example.out`.
 * To Run: Simply run the `main` executable in CLion.
 
 ### 2. Custom Input Mode
 To test the Matcher against specific custom inputs:
 1.  Place your input data in a file named `example.in` inside the `src` folder.
-2.  Open `main.cpp`.
-3.  Run the program.
+2. Run the program.
 
 ---
 
 ## Assumptions
-* Input Format: The program expects input formatted according to the standard Gale-Shapley requirement (Number of pairs $n$, followed by $n$ preference lists for set A, then $n$ preference lists for set B). An example for the $n=2$ test case is below. 
+ * Input Format: The program expects input in the following format. 
+
+K \
+x1 v1 \
+x2 v2 \
+... \
+xk vk \
+A \
+B
 ```
-2
-1 2 
-1 2 
-1 2 
-2 1 
-```
-* File Locations: Custom inputs must be placed in `src/example.in`.
-
----
-
-### Question 1: Empirical Comparsion
-
-
-### Question 2: Recurrence Equation
-
-
-### Question 3: Big-Oh
